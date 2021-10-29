@@ -2,18 +2,6 @@ name: "Feature Request"
 description: "A new feature"
 labels: ["Feature"]
 body:
-- type: markdown
-  attributes:
-    value: "# Features\n"
-- type: checkboxes
-  id: cat-preferences
-  attributes:
-    label: What kinds of cats do you like?
-    description: You may select more than one.
-    options:
-      - label: Orange cat (required. Everyone likes orange cats.)
-        required: true
-      - label: Black cat
 - type: "textarea"
   id: Features
   attributes:
@@ -23,3 +11,26 @@ body:
     value: "A bug happened!"
   validations:
     required: true
+- type: checkboxes
+  id: browsers
+  attributes:
+    label: Browsers & Devices
+    description: Check all browsers & devices been tested on
+    options:
+      - label: Chrome (Desktop)
+        required: true
+      - label: Safari (Desktop)
+        required: true
+      - label: Edge (Desktop)
+        required: true
+      - label: Firefox (Desktop)
+        required: true
+      - label: Chrome (Mobile)
+        required: true
+      - label: Safari (Mobile)
+        required: true
+      - label: Min Screen Width (320px min)
+        required: true
+      - label: Max Screen Width (1920px min)
+        required: true
+
