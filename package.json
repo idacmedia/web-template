@@ -6,7 +6,12 @@
 
     },
     "scripts": {
-        "test": "tsc --noEmit && jest"
+        "start": "gatsby develop",
+        "build": "gatsby build",
+        "serve": "gatsby serve",
+        "test": "tsc --noEmit && jest",
+        "clean": "gatsby clean",
+        "netlify-start": "netlify dev"
     },
     "devDependencies": {
         "jest": "^26.6.3",
