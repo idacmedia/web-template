@@ -1,0 +1,10 @@
+name: Commit Checks
+on: push
+jobs:
+  lint:
+    name: Run Lint
+    runs-on: ubuntu-latest
+    steps:
+      - name: Jest
+        shell: bash
+        run: jest
