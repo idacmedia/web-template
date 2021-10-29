@@ -1,0 +1,52 @@
+{
+    "name": "web-template",
+    "version": "1.0.0",
+    "private": true,
+    "dependencies": {
+
+    },
+    "scripts": {
+        "test": "tsc --noEmit && jest"
+    },
+    "devDependencies": {
+        "jest": "^26.6.3",
+        "ts-jest": "^26.4.4"
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "pretty-quick --staged"
+        }
+    },
+    "jest": {
+        "moduleFileExtensions": [
+            "js",
+            "ts",
+            "tsx",
+            "json"
+        ],
+        "transform": {
+            "\\.(ts|tsx)$": "ts-jest"
+        },
+        "testRegex": "/src/.*\\.(test|spec)\\.[jt]sx?$",
+        "collectCoverage": false,
+        "collectCoverageFrom": [
+            "src/**/*"
+        ],
+        "coveragePathIgnorePatterns": [
+            ".*\\.d\\.ts$",
+            "/node_modules/"
+        ],
+        "coverageReporters": [
+            "html",
+            "json"
+        ],
+        "coverageThreshold": {
+            "global": {
+                "branches": 1,
+                "functions": 1,
+                "lines": 1,
+                "statements": 1
+            }
+        }
+    }
+}
