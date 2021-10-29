@@ -2,6 +2,9 @@ name: "Feature Request"
 description: "A new feature"
 labels: ["Feature"]
 body:
+- type: markdown
+  attributes:
+    value: "# Features\n"
 - type: checkboxes
   id: cat-preferences
   attributes:
